@@ -1,5 +1,8 @@
 
 package examenfinalparte2;
+
+import javax.swing.JOptionPane;
+
 /**
  * 
  * @author Aaron
@@ -11,10 +14,10 @@ public class Principal {
 
     public static void main(String arg[]) {
         
-        int digitos = 2;
+        int digitos = 0;
         int numeroDigitos = 0;
         if (digitos <= 0) {
-            System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
+            Integer.parseInt(JOptionPane.showInputDialog("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): "));
         }
         
         for (int i = 1; i <= 99999; i++) {
