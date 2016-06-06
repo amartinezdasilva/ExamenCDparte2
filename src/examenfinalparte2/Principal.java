@@ -1,16 +1,22 @@
 
 package examenfinalparte2;
+/**
+ * 
+ * @author Aaron
+ */
 
 public class Principal {
 
-    public static boolean p = false;
+    public static boolean imprime = false;
 
     public static void main(String arg[]) {
+        
         int dig = 2;
         int ndig = 0;
         if (dig <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
+        
         for (int i = 1; i <= 99999; i++) {
             int aux = i;
 
@@ -24,10 +30,10 @@ public class Principal {
 
             if (ndig == dig) {
                 if (i < 4) {
-                    p = true;
+                    imprime = true;
                 } else {
                     if (i % 2 == 0) {
-                        p = false;
+                        imprime = false;
                     } else {
                         int contador1 = 0;
                         int i1 = 1;
@@ -47,12 +53,12 @@ public class Principal {
                         }
 
                         if (contador1 == 1) {
-                            p = true;
+                            imprime = true;
                         }
                     }
                 }
 
-                if (p == true) {
+                if (imprime == true) {
                     System.out.println(i);
                 }
             }
