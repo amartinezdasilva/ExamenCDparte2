@@ -11,9 +11,9 @@ public class Principal {
 
     public static void main(String arg[]) {
         
-        int dig = 2;
+        int digitos = 2;
         int numeroDigitos = 0;
-        if (dig <= 0) {
+        if (digitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
         
@@ -21,14 +21,14 @@ public class Principal {
             int aux = i;
 
             int contador = 0;
-
+            
             while (aux != 0) {
                 aux = aux / 10;
                 contador++;
             }
             numeroDigitos = contador;
 
-            if (numeroDigitos == dig) {
+            if (numeroDigitos == digitos) {
                 if (i < 4) {
                     imprime = true;
                 } else {
